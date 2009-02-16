@@ -6,9 +6,10 @@ byte ip[] = { 192, 168, 1, 99 };
 byte gateway[] = { 192, 168, 1, 1 };
 byte subnet[] = { 255, 255, 255, 0 };
 
-byte server[] = { 64, 233, 187, 99 }; // Google
+byte server[] = { 192, 168, 1, 108 }; // Test server
+byte port = 3000; // Test port
 
-Client client(server, 80);
+Client client(server, port);
 
 void setup()
 {
@@ -22,7 +23,7 @@ void setup()
   
   if (client.connect()) {
     Serial.println("connected");
-    client.println("GET /search?q=arduino HTTP/1.0");
+    client.println("GET /samples?station_id=123&value=321 HTTP/1.0");
     client.println();
   } else {
     Serial.println("connection failed");

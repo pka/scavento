@@ -1,0 +1,6 @@
+<h1>Values</h1>
+<% params.each do |key, value| -%>
+<% unless ['action', 'controller'].include? key -%>
+<%=h key %>: <%=h value %><br/>
+<% end -%>
+<% end -%>

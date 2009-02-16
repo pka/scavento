@@ -48,7 +48,7 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_webserver_session',
+    :session_key => '_scavento_session',
     :secret      => 'e2fd23bc09bb5810b5986ac13b9b3efab9dab52f4ef7d39810117ea0991119bbee77529efa24f9c27eba257b6e0c275be6b8f1e7f55e8c1312238854ec48a96d'
   }
 
