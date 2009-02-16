@@ -1,0 +1,5 @@
+=Scavento
+
+Scavento is a low-cost weather station based on open hardware.
+
+http://pro.sourcepole.ch/wiki/scavento/
